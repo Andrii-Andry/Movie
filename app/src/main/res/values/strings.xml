@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="Scream_movie">Scream V</string>
+    <string name="Scream_18">18+</string>
+    <string name="Sceram_back"> Back </string>
+    <string name="Scream_discription">25 years after a streak of brutal murders shocked the quiet town of Woodsboro, Calif., a new killer dons the Ghostface mask and begins targeting a group of teenagers to resurrect secrets
+        from the town\'s deadly past </string>
+    <string name="Scream_Genre">Horror</string>
+    <string name="Back"> Back </string>
+    <string name="rating">251 REWIEWS</string>
+    <string name="Storiline">Storiline</string>
+    <string name="jack_quaid">Jack Quaid</string>
+    <string name="jenna_ortega">Jenna Ortega</string>
+    <string name="melissa_barrera">Melissa Barrera</string>
+    <string name="neve_cambell">Neve Cambel</string>
+    <string name="cast">Cast</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="heart">heart</string>
+    <string name="Movies_list">Movies list</string>
+    <string name="timeng">120 min</string>
+
+</resources>

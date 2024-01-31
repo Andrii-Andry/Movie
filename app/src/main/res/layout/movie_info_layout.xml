@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/banner"
+            android:layout_width="414dp"
+            android:layout_height="235dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/scream"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-40dp"
+            android:paddingStart="20dp"
+            android:text="@string/Scream_movie"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/banner"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/R18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="389dp"
+            android:paddingStart="20dp"
+            android:text="@string/Scream_18"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/scream"
+            app:layout_constraintEnd_toEndOf="@+id/banner"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:text="@string/Scream_Genre"
+        android:textColor="@color/RYB_RED"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/scream"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Back"
+            android:textColor="@color/Gray"
+            android:textSize="15sp"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/R18"
+            app:layout_constraintStart_toEndOf="@+id/banner"
+            app:layout_constraintStart_toStartOf="@+id/banner"
+            tools:layout_editor_absoluteY="99dp"
+            tools:ignore="MissingConstraints" />
+
+        <RatingBar
+        android:id="@+id/rating1"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:numStars="5"
+        android:paddingStart="10dp"
+        android:progressBackgroundTint="#E1B2B2"
+        android:rating="3"
+        android:theme="@style/Widget.AppCompat.RatingBar.Indicator"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/genre"
+        tools:ignore="MissingConstraints,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating"
+        android:textSize="10sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="19dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/rating1"
+        app:layout_constraintTop_toTopOf="@+id/rating1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/storiline_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Storiline"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/like"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/discription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:text="@string/Scream_discription"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/storiline_movie" />
+
+        <include
+            android:id="@+id/cast_list"
+            layout="@layout/cast_list_layout"
+            android:layout_width="416dp"
+            android:layout_height="195dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+

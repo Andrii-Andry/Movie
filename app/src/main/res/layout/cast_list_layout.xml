@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black">
+
+
+
+<com.google.android.material.imageview.ShapeableImageView
+
+        android:id="@+id/jack_actor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/jack_quaid"
+        app:shapeAppearanceOverlay="@style/cast"
+        app:layout_constraintBottom_toTopOf="@+id/JQ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cast" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/jenna_actor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="4dp"
+        app:shapeAppearanceOverlay="@style/cast"
+        android:src="@drawable/jenna_ortega"
+        app:layout_constraintLeft_toRightOf="@+id/jack_actor"
+        app:layout_constraintTop_toBottomOf="@+id/cast" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/melissa_actor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="8dp"
+        app:shapeAppearanceOverlay="@style/cast"
+        android:src="@drawable/melissa_barrera"
+        app:layout_constraintLeft_toRightOf="@+id/jenna_actor"
+        app:layout_constraintTop_toBottomOf="@+id/cast" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/neve_actor"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginEnd="20dp"
+        android:layout_margin="20dp"
+        app:shapeAppearanceOverlay="@style/cast"
+        android:src="@drawable/neve_campbell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/melissa_actor"
+        app:layout_constraintTop_toBottomOf="@+id/cast" />
+
+    <TextView
+        android:id="@+id/cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+        android:text="@string/cast"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/JQ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/jack_quaid"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/jack_actor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jack_actor" />
+
+    <TextView
+        android:id="@+id/JO"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/jenna_ortega"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/jenna_actor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/jack_actor"
+        app:layout_constraintTop_toBottomOf="@+id/jack_actor" />
+
+    <TextView
+        android:id="@+id/MB"
+        android:layout_width="61dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/melissa_barrera"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/melissa_actor"
+        app:layout_constraintStart_toEndOf="@+id/jenna_actor"
+        app:layout_constraintTop_toBottomOf="@+id/jack_actor" />
+
+    <TextView
+        android:id="@+id/NC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/neve_cambell"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/neve_actor"
+        app:layout_constraintStart_toEndOf="@+id/melissa_actor"
+        app:layout_constraintTop_toBottomOf="@+id/neve_actor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
