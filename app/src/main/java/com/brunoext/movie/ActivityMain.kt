@@ -32,10 +32,10 @@ class ActivityMain: AppCompatActivity(){
         personAdapter = PersonAdapter()
         personAdapter.addMovie(
             listOf(
-                MovieInfo(name = "scream 5", genre = "horror", avatarURL = "", age = 190),
-                MovieInfo(name = "scream 4", genre = "triller", avatarURL = "", age = +20),
-                MovieInfo(name = "scream 4", genre = "triller", avatarURL = "", age = +20),
-                MovieInfo(name = "scream 4", genre = "triller", avatarURL = "", age = +20),
+                MovieInfo(name = "Scream", genre = "horror", avatarURL = "https://cdn.theatlantic.com/thumbor/hL7nw-hDmOt3yMZZ9TAwtj7o14g=/525x0:1931x1406/1080x1080/media/img/mt/2022/01/scr14979r_2/original.jpg", age = +16),
+                MovieInfo(name = "Batman", genre = "action", avatarURL = "https://prod-printler-front-as.azurewebsites.net/media/photo/162551-1.jpg", age = +13),
+                MovieInfo(name = "One Piece", genre = "anime", avatarURL = "https://static.tvtropes.org/pmwiki/pub/images/2e5c6d37_566f_4274_b62d_ebf5fcbd0722.png", age = +16),
+                MovieInfo(name = "Max Payne", genre = "triller", avatarURL = "https://static.android.com.pl/uploads/2022/06/Max-Payne-2008.jpg", age = +18),
 
             )
         )

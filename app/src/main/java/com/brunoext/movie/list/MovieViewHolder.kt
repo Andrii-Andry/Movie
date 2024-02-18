@@ -21,6 +21,11 @@ class MovieViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         genre.text = movieInfo.genre
         ageRestriction.text = movieInfo.age.toString()
 
+        Glide.with(itemView.context)
+            .load(movieInfo.avatarURL)
+            .skipMemoryCache(true)
+            .into(imageBanner)
+
 
         }
     }
